@@ -1,12 +1,12 @@
 import './App.css';
 import SearchBar from './components/SearchBar';
-import Types from './components/Typeography';
+import ColourGrid from './components/ColourGrid';
 
 function App() {
   return (
     <div className='App'>
-      <SearchBar></SearchBar>
-      <Types></Types>
+      <SearchBar />
+      <ColourGrid />
     </div>
   );
 }
