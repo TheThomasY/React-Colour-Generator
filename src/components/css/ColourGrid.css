@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.colour-card {
+  padding: 2.5rem 5rem;
+  border: 1px solid red;
+  font-size: 1.6rem;
+}
+
+.colour-text {
+  margin-top: 0.5rem;
+}
