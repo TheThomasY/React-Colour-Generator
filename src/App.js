@@ -87,7 +87,7 @@ function App() {
       })
     }
 
-    console.log(colourList);
+    // console.log(colourList);
   }
   
 
@@ -95,7 +95,7 @@ function App() {
   return (
     <div className='App'>
       <SearchBar onSearchColour={showColourGrid}/>
-      <ColourGrid colourHex={colourList}/>
+      <ColourGrid colourList={colourList}/>
     </div>
   );
 }
