@@ -10,7 +10,6 @@ export default function SearchBar(props) {
 
   const searchHandler = (event) => {
     event.preventDefault();
-
     props.onSearchColour(searchColourHex);
   };
 
