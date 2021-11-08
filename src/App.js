@@ -60,7 +60,7 @@ function App() {
 
     for (let i=0; i<21; i++) {
 
-      let percentage = i<10 ? '-' + (100-i*10).toString() + '%' : ((i-10)*10).toString() + '%';
+      let percentage = i<10 ? '-' + (100-i*10).toString() : ((i-10)*10).toString();
     
 
       if (i<10) {
@@ -77,12 +77,12 @@ function App() {
 
       setColourList((prevColourList) => {
         return [
+          ...prevColourList,
           {
             percentage: percentage,
             hex: RGBToHex(rgbRange),
             rgb: rgbRange
-          },
-          ...prevColourList
+          }
         ]
       })
     }

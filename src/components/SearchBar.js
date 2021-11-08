@@ -14,7 +14,7 @@ export default function SearchBar(props) {
   };
 
   return (
-    <div className='nav-bar'>
+    <div className='nav-bar' style={{ backgroundColor: searchColourHex }}>
       <h1 className='nav-title'>Colour Generator</h1>
       <form className='search-form' onSubmit={searchHandler}>
         <label htmlFor='header-search'>
