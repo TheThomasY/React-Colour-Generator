@@ -8,6 +8,7 @@ export default function ColourCard(props) {
     <div
       style={{ backgroundColor: props.rgb, color: textColour }}
       className='colour-card'
+      onClick={() => navigator.clipboard.writeText(props.hex)}
     >
       <h2 className='card-hex'>{props.hex}</h2>
       <h3 className='card-percentage'>{props.percentage}%</h3>
