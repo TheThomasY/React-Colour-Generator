@@ -6,8 +6,15 @@
 .colour-card {
   padding: 2.5rem 5rem;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
-.colour-text {
-  margin-top: 0.5rem;
+.card-hex {
+  font-weight: 300;
+}
+
+.card-percentage {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
 }

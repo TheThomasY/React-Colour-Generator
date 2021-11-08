@@ -8,6 +8,7 @@ export default function ColourGrid(props) {
       {props.colourList.map((colourObj) => (
         <ColourCard
           key={colourObj.percentage}
+          percentage={colourObj.percentage}
           hex={colourObj.hex}
           rgb={colourObj.rgb}
         />

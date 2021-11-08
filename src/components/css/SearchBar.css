@@ -3,13 +3,19 @@
   flex-direction: column;
   padding: 2rem;
   padding-bottom: 1rem;
-  background-color: rgb(48, 136, 184);
+  background-color: rgb(184, 184, 184);
 }
 
 .nav-title {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 3rem;
   font-size: 3rem;
   text-align: center;
   color: white;
+  background-color: black;
 }
 
 .search-form {
