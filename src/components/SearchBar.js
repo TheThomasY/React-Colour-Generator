@@ -14,21 +14,26 @@ export default function SearchBar(props) {
   };
 
   return (
-    <div className='nav-bar' style={{ backgroundColor: searchColourHex }}>
+    <div className='nav-bar'>
       <h1 className='nav-title'>Colour Generator</h1>
       <form className='search-form' onSubmit={searchHandler}>
         <label htmlFor='header-search'>
           <span className='sr-only'>Search blog posts</span>
         </label>
-        <input
-          className='search-input'
-          type='text'
-          id='search-input'
-          placeholder='#000000'
-          name='search'
-          value={searchColourHex}
-          onChange={searchChangeHandler}
-        />
+        <div
+          className='input-wrapper'
+          style={{ backgroundColor: searchColourHex }}
+        >
+          <input
+            className='search-input'
+            type='text'
+            id='search-input'
+            placeholder='#000000'
+            name='search'
+            value={searchColourHex}
+            onChange={searchChangeHandler}
+          />
+        </div>
       </form>
     </div>
   );
